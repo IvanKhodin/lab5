@@ -3,7 +3,8 @@
 import math
 
 def f(x):
-    math.sin(x*x)
+    return math.sin(x*x)
+    
 
 def Simp(n, a, b):
     s=0
@@ -20,8 +21,8 @@ def Rect(n, a, b):
     return h* (f(a)/2 + s + f(b)/2)
 
 a=0
-b=1
-e=0.0001 
+b=math.pi / 4
+e=0.001 
 n=20
 while abs((Simp(n,a,b)- Simp(n//2, a, b))/Simp(n, a, b)) >=e:
     n*=2
