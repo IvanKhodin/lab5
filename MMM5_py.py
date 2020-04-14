@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+
+import math
+
 def f(x):
     math.sin(x*x)
 
